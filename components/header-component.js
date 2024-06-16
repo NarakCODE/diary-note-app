@@ -14,6 +14,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
         <!-- Header Profile -->
         <div class="header__profile">
+          <div class="header__profile__name"> 
+            <p>Welcome back</p>
+            <p>NarakCODE</p>
+          </div>
           <img src="./assets/images/profile-img.avif" alt="profile-img" />
         </div>
       </div>

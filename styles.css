@@ -96,6 +96,10 @@ body {
   background-color: var(--blue);
 }
 
+.delete__btn {
+  background-color: var(--red);
+}
+
 .edit__icon,
 .delete__icon {
   width: 40px;
@@ -164,9 +168,26 @@ body {
   width: 50px;
 }
 
+.header__container .header__inner .header__profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+
+.header__container .header__inner .header__profile p:nth-child(1) {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.header__container .header__inner .header__profile p:nth-child(2){
+  font-size: 18px;
+  font-weight: 400;
+}
+
 .header__container .header__inner .header__profile img {
-  width: 60px;
-  height: 60px;
+  width: 40px;
+  height: 40px;
   object-fit: cover;
   border: 2px solid var(--dark-black);
   border-radius: 100%;
