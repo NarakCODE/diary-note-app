@@ -1,0 +1,25 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+/* Variable colors */
+:root {
+  --white: #fff;
+  --light-white: #f5f7f8;
+  --soft-white: #f0f0f0;
+  --light-black: #222831;
+  --dark-black: #000;
+  --red: #f45050;
+  --blue: #525fe1;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  font-size: 16px;
+  background-color: var(--light-white);
+  color: var(--dark-black);
+}
+
+
