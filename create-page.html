@@ -18,8 +18,28 @@
     <header-component></header-component>
 
     <!-- Main Container -->
-    <main>
-      <div class="inner__width"></div>
+    <main class="main__container">
+      <div class="inner__width">
+        <form class="form__container" id="diary__form">
+          <div class="form__group">
+            <label for="title">Title</label>
+            <input
+              type="text"
+              name="title"
+              id="title"
+              placeholder="Enter Title"
+            />
+          </div>
+          <div class="form__group">
+            <label for="content">Content</label>
+            <textarea name="" id="" rows="12" placeholder="Content"></textarea>
+          </div>
+          <div class="form__group">
+            <label for="date">Date</label>
+            <input type="date" name="date" id="date" placeholder="Enter Date" />
+          </div>
+        </form>
+      </div>
     </main>
 
     <!-- Footer Container -->

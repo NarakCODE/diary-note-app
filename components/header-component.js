@@ -1,5 +1,6 @@
-const headerDesign = () => {
-  return `
+document.addEventListener("DOMContentLoaded", () => {
+  const headerDesign = () => {
+    return `
      <!-- Header Container -->
     <header class="header__container">
       <!-- Inner Width -->
@@ -18,12 +19,13 @@ const headerDesign = () => {
       </div>
     </header>
     `;
-};
+  };
 
-class HeaderComponent extends HTMLElement {
-  connectedCallback() {
-    this.innerHTML = headerDesign();
+  class HeaderComponent extends HTMLElement {
+    connectedCallback() {
+      this.innerHTML = headerDesign();
+    }
   }
-}
 
-customElements.define("header-component", HeaderComponent);
+  customElements.define("header-component", HeaderComponent);
+});
