@@ -96,6 +96,23 @@ body {
   background-color: var(--blue);
 }
 
+.edit__icon,
+.delete__icon {
+  width: 40px;
+  height: 40px;
+  background-color: var(--light-white);
+  border-radius: 7px;
+  transition: 0.2s ease;
+}
+
+.edit__icon:hover {
+  background-color: var(--soft-white);
+}
+
+.delete__icon:hover {
+  background-color: var(--soft-white);
+}
+
 .delete__btn {
   background-color: var(--red);
 }
@@ -218,6 +235,7 @@ body {
 }
 
 .diary__item {
+  cursor: pointer;
   padding: 20px 40px;
   border: 1px solid var(--soft-gray);
   background-color: var(--white);
@@ -225,6 +243,33 @@ body {
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+
+.diary__item:hover {
+  outline: 1px solid var(--light-black);
+}
+
+.diary__item .diary__title {
+  font-size: 24px;
+}
+
+.diary__item .diary__content {
+  font-size: 16px;
+  color: var(--light-black);
+}
+
+.diary__item .diary__content:hover {
+  background-color: var(--light-white);
+}
+
+.diary__date {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.view__item {
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 .diary__footer {
