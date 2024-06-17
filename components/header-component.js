@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const headerDesign = () => {
-    return `
+    const headerDesign = () => {
+        return `
      <!-- Header Container -->
     <header class="header__container">
       <!-- Inner Width -->
@@ -8,9 +8,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
         <!-- Header Logo -->
         <a class="header__logo" href="./index.html"
-          >Diary Application
-          <span><img src="./assets/images/diary.png" alt="logo-img" /></span
-        ></a>
+          ><span>Diary Application</span>
+          <img src="./assets/images/diary.png" alt="logo-img" />
+        </a>
 
         <!-- Header Profile -->
         <div class="header__profile">
@@ -23,13 +23,13 @@ document.addEventListener("DOMContentLoaded", () => {
       </div>
     </header>
     `;
-  };
+    };
 
-  class HeaderComponent extends HTMLElement {
-    connectedCallback() {
-      this.innerHTML = headerDesign();
+    class HeaderComponent extends HTMLElement {
+        connectedCallback() {
+            this.innerHTML = headerDesign();
+        }
     }
-  }
 
-  customElements.define("header-component", HeaderComponent);
+    customElements.define("header-component", HeaderComponent);
 });
