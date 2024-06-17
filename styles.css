@@ -21,6 +21,7 @@ main {
 }
 
 button {
+    font-family: "Outfit", sans-serif;
     border: none;
     outline: none;
     background: none;
@@ -44,7 +45,7 @@ body {
     --white: #fff;
     --light-white: #f5f7f8;
     --soft-white: #eee;
-    --soft-gray: #c7c8cc;
+    --soft-gray: #eee;
     --light-black: #222831;
     --dark-black: #000;
     --red: #f45050;
@@ -202,6 +203,7 @@ body {
     align-items: center;
     justify-content: center;
     background-color: var(--white);
+    color: #ccc;
 }
 
 .footer__inner {
@@ -247,6 +249,7 @@ body {
 
 /* List Container */
 .list__container {
+    width: 100%;
     max-width: auto;
     display: flex;
     flex-direction: column;
@@ -255,6 +258,7 @@ body {
 }
 
 .diary__item {
+    width: 100%;
     cursor: pointer;
     padding: 20px;
     border: 1px solid var(--soft-gray);
@@ -263,10 +267,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 10px;
-}
-
-.diary__item:hover {
-    outline: 1px solid var(--light-black);
+    transition: 0.2s ease-in-out;
 }
 
 .diary__item .diary__title {
@@ -338,11 +339,12 @@ body {
     border-radius: 7px;
     font-size: 16px;
     background-color: var(--light-white);
+    font-family: sans-serif;
 }
 
 .form__container .form__group input::placeholder,
 textarea::placeholder {
-    color: var(--soft-gray);
+    color: #ccc;
 }
 
 /* Mobile Responsive */
@@ -376,6 +378,7 @@ textarea::placeholder {
     }
 
     .list__container {
+        width: 100%;
         height: 100%;
     }
 }

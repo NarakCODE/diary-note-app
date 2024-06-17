@@ -23,31 +23,28 @@
             <div class="inner__width">
                 <form class="form__container" id="diary__form">
                     <div class="form__group">
-                        <label for="title">Title</label>
+                        <label for="title">Title of your diary</label>
                         <input
                             type="text"
                             name="title"
                             id="title"
-                            placeholder="Enter Title"
+                            placeholder="Enter title"
+                            required
                         />
                     </div>
                     <div class="form__group">
-                        <label for="content">Content</label>
+                        <label for="content">Enter content</label>
                         <textarea
                             name=""
                             id=""
                             rows="8"
                             placeholder="Content"
+                            required
                         ></textarea>
                     </div>
                     <div class="form__group">
                         <label for="date">Date</label>
-                        <input
-                            type="date"
-                            name="date"
-                            id="date"
-                            placeholder="Enter Date"
-                        />
+                        <input type="date" name="date" id="date" required />
                     </div>
                     <button class="btn create__btn">Create</button>
                 </form>

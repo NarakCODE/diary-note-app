@@ -1,49 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Diary Application/View</title>
-    <link rel="stylesheet" href="styles.css" />
-    <!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <!-- Header Container -->
-    <header-component></header-component>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Diary Application/View</title>
+        <link rel="stylesheet" href="styles.css" />
+        <!-- Google Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <!-- Header Container -->
+        <header-component></header-component>
 
-    <!-- Main Container -->
-    <main class="main__container">
-      <h2 class="main__title">View Diary</h2>
-      <div class="inner__width">
-        <div class="diary__item view__item">
-          <h2 class="diary__title">Title</h2>
-          <p class="diary__content">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
-            repudiandae, alias odit tempora omnis reiciendis voluptatem?
-            Voluptate numquam asperiores aperiam maiores hic beatae eum culpa
-            totam inventore dolorem, soluta veritatis doloribus, dolorum
-            deserunt? Optio, placeat. Rerum ipsam unde possimus minima!
-          </p>
-          <div class="diary__footer">
-            <h4 class="diary__date">14-03-2024</h4>
-            <button class="delete__btn btn">Delete</button>
-          </div>
-        </div>
-      </div>
-    </main>
+        <!-- Main Container -->
+        <main class="main__container">
+            <h2 class="main__title">View Diary</h2>
+            <div class="inner__width">
+                <div class="diary__item view__item">
+                    <h2 class="diary__title">Title</h2>
+                    <p class="diary__content">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Harum repudiandae, alias odit tempora omnis reiciendis
+                        voluptatem? Voluptate numquam asperiores aperiam maiores
+                        hic beatae eum culpa totam inventore dolorem, soluta
+                        veritatis doloribus, dolorum deserunt? Optio, placeat.
+                        Rerum ipsam unde possimus minima!
+                    </p>
+                    <div class="diary__footer">
+                        <h4 class="diary__date">14-03-2024</h4>
+                        <button
+                            class="delete__btn btn"
+                            onclick="navigateTo('index.html')"
+                        >
+                            Delete
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </main>
 
-    <!-- Footer Container -->
-    <footer-component></footer-component>
-  </body>
+        <!-- Footer Container -->
+        <footer-component></footer-component>
+    </body>
 
-  <script src="./components/header-component.js"></script>
-  <script src="./components/footer-component.js"></script>
-  <script src="./script.js"></script>
+    <script src="./components/header-component.js"></script>
+    <script src="./components/footer-component.js"></script>
+    <script src="./script.js"></script>
 </html>
